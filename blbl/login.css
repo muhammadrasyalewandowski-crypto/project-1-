@@ -1,0 +1,75 @@
+/* ===================== Skuad Stats — login.css (halaman login: login.html) ===================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --accent: #D9A441;
+}
+html[data-accent="amber"]   { --accent: #D9A441; }
+html[data-accent="crimson"] { --accent: #C4483A; }
+html[data-accent="sky"]     { --accent: #3F7DB0; }
+html[data-accent="lime"]    { --accent: #8FB93B; }
+
+html[data-theme="dark"] {
+  --bg: #0F1C16;
+  --text: #EDEAE0;
+  --card: #16261F;
+  --border: #26392F;
+  --sub: #9FB0A5;
+  --input-bg: #0F1C16;
+}
+html[data-theme="light"] {
+  --bg: #F3F1EA;
+  --text: #182019;
+  --card: #FFFFFF;
+  --border: #E4E0D4;
+  --sub: #5C6B60;
+  --input-bg: #F6F4EE;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  min-height: 100vh;
+}
+
+/* halaman login */
+.ss-login-wrap { max-width: 420px; margin: 0 auto; padding: 48px 20px; text-align: center; }
+.ss-login-title { font-family: 'Barlow Condensed',sans-serif; font-weight: 700; font-size: 34px; margin-bottom: 2px; }
+.ss-login-sub { opacity: 0.65; font-size: 14px; margin-bottom: 28px; }
+.ss-login-box { text-align: left; background: color-mix(in srgb, var(--text) 4%, transparent); border: 1px solid var(--border); border-radius: 14px; padding: 16px; }
+.ss-role-btn { width: 100%; text-align: left; display: flex; align-items: center; gap: 12px; padding: 16px; background: color-mix(in srgb, var(--text) 4%, transparent); border: 1px solid var(--border); border-radius: 14px; color: inherit; cursor: pointer; margin-bottom: 12px; font-family: inherit; }
+.ss-account-row { width: 100%; text-align: left; display: flex; align-items: center; gap: 10px; padding: 10px 8px; background: transparent; border: none; border-bottom: 1px solid var(--border); color: inherit; cursor: pointer; font-family: inherit; }
+.ss-account-row:last-child { border-bottom: none; }
+.ss-error { color: #D96A5A; font-size: 12px; margin-bottom: 8px; }
+.ss-hint { font-size: 12px; opacity: 0.5; margin-top: 20px; }
+
+/* tombol, input, teks */
+.ss-sub { color: var(--sub); font-size: 13px; }
+.ss-btn { background: var(--accent); color: #17130A; border: none; border-radius: 10px; padding: 10px 14px; font-weight: 600; cursor: pointer; font-size: 14px; display: inline-flex; align-items: center; gap: 6px; }
+.ss-btn-ghost { background: transparent; border: 1px solid var(--border); color: inherit; border-radius: 10px; padding: 9px 13px; cursor: pointer; font-size: 14px; display: inline-flex; align-items: center; gap: 6px; }
+.ss-input { width: 100%; background: var(--input-bg); border: 1px solid var(--border); color: inherit; border-radius: 9px; padding: 9px 11px; font-size: 14px; font-family: inherit; }
+.ss-row { display: flex; align-items: center; gap: 8px; }
+
+/* avatar / foto profil */
+.ss-avatar { width: 38px; height: 38px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; background: color-mix(in srgb, var(--accent) 18%, transparent); color: var(--accent); flex-shrink: 0; overflow: hidden; }
+.ss-avatar img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+/* ikon */
+.ss-icon { display: inline-flex; vertical-align: middle; }
+.ss-icon svg { display: block; }
+
+/* kelas bantu yang dipakai login.js */
+.mb8 { margin-bottom: 8px; }
+.mb10 { margin-bottom: 10px; }
+.mb12 { margin-bottom: 12px; }
+.mb16 { margin-bottom: 16px; }
+.wfull { width: 100%; }
+.fs12-muted { font-size: 12px; opacity: .6; }
+.fw6-fs14 { font-weight: 600; font-size: 14px; }
+.fw7-fs15 { font-weight: 700; font-size: 15px; }
+.flex1 { flex: 1; }
+.jc-center { justify-content: center; }
